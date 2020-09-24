@@ -9,21 +9,26 @@
   background-color: yellow;
   height: 2000px;
   padding: 0 15%;
+  overflow: auto;
 }
 
-.row::after {
+/* .col::after {
   display: table;
   content: "";
   clear: both;
-}
+} */
 
 /* classi che determinano un grid generale da riusare per definire il layout della pagina */
 
-.row-50 {
-  background-color: green;
+.col {
   float: left;
+}
+
+.col-50 {
+  background-color: green;
   width: 50%;
   height: 100px;
+  float: left;
 }
 
 .tc {
@@ -31,14 +36,48 @@
   background-color: hotpink;
 }
 
-.main-top-container::after {
+.main-top-container::after,
+.main-bottom-container-1::after, 
+.main-bottom-container-2::after, 
+.main-middle-container-2::after,
+.top-footer::after,
+.bottom-footer::after,
+.top-header::after,
+.bottom-header::after {
   display: table;
   content: "";
   clear: both;
 }
 
-.row-100 {
+.col-100 {
   height: 300px;
   background-color: khaki;
 }
 
+.col-33 {
+  width: calc(100% * 1/3);
+  height: 600px;
+  background-color: blue;
+  float: left;
+}
+
+.col-25 {
+  width: 25%;
+  height: 100px;
+  float: left;
+  background-color: lightcoral;
+}
+
+.col-30 {
+  width: 30%;
+  height: 300px;
+  background-color: blueviolet;
+  float: left;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+  height: 300px;
+  background-color: brown;
+}
