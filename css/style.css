@@ -7,10 +7,22 @@
 
 .container {
   background-color: yellow;
-  height: 2000px;
-  padding: 0 15%;
-  overflow: auto;
+  /* padding: 0 15%; */
 }
+
+body::after,
+body::before {
+  content: "";
+  display: table;
+}
+
+body::after {
+  clear: both;
+}
+
+/* body {
+  *zoom: 1;
+} */
 
 /* .col::after {
   display: table;
@@ -79,5 +91,19 @@
   float: left;
   width: 70%;
   height: 300px;
+  background-color: greenyellow;
+}
+
+.top-header,
+.bottom-header,
+.main-top-container,
+.main-middle-container-1,
+.main-middle-container-2,
+.main-bottom-container-1,
+.main-bottom-container-2,
+.top-footer,
+.middle-footer,
+.bottom-footer {
   background-color: brown;
+  padding: 0 15%;
 }
