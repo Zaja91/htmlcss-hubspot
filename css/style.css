@@ -10,13 +10,13 @@
   /* padding: 0 15%; */
 }
 
-body::after,
-body::before {
+body:after,
+body:before {
   content: "";
   display: table;
 }
 
-body::after {
+body:after {
   clear: both;
 }
 
